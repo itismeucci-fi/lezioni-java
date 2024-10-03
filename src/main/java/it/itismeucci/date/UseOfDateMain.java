@@ -2,6 +2,7 @@ package it.itismeucci.date;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 public class UseOfDateMain {
 
     public static void main(String[] args) {
@@ -32,5 +33,19 @@ public class UseOfDateMain {
 		
 		LocalDate hundredDay2014 = LocalDate.ofYearDay(2014, 100);
 		System.out.println("100th day of 2014="+hundredDay2014); 
+
+
+
+
+		LocalDate d1 = LocalDate.of(2022, 1, 1);
+
+		LocalDate d2 = LocalDate.of(2024, 1, 1);
+
+
+		ChronoUnit cud =ChronoUnit.DAYS;
+
+
+		long days = cud.between(d1, d2);
+		System.out.println(days);
     }
 }
