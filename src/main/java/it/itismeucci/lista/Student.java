@@ -1,5 +1,9 @@
 package it.itismeucci.lista;
 
+/**
+ * Classe studente 
+ * @author prof scialpi
+ */
 public class Student {
 
     private long id;
@@ -9,6 +13,11 @@ public class Student {
 
     private static long IDGENERATOR = 1;
     
+    /**
+     * Il costruttore non prende in input l'id poichè è calcolata in automatico come progressivo
+     * @param name il nome dello studente
+     * @param surname il congnome dello studente
+     */
     public Student(String name, String surname) {
         this.id = IDGENERATOR;
         IDGENERATOR++;
