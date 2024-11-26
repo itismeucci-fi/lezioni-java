@@ -1,4 +1,4 @@
-package it.edu.itismeucci.geometry;
+package it.itismeucci.geometry;
 
 public class MainGeometry {
 
